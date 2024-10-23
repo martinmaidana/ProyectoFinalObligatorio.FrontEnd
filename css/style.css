@@ -1,0 +1,158 @@
+/* CSS Reset */
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+h1{
+    color: #fff !important;
+    text-align: center;
+
+}
+
+/* Estilos específicos para la primera parte */
+.contenedor .card {
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.contenedor .hover-uno:hover {
+    height: 400px;
+}
+
+.contenedor .card .imgContainer {
+    position: relative;
+    width: 100%;
+    top: -50px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .card .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.contenedor .card .card-body {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.contenedor .hover-uno:hover .card-body {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+/* Estilos específicos para la segunda parte */
+#second-part .contenedor-dos .card {
+    max-width: 300px;
+    height: auto; /* Permitir que la imagen se ajuste */
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    position: relative; /* Necesario para posicionar el texto */
+    overflow: hidden; /* Evita que el texto se desborde */
+    transition: 0.3s ease-in-out;
+}
+
+#second-part .contenedor-dos .hover-dos:hover {
+    height: auto; /* Mantener el tamaño de la tarjeta */
+}
+
+#second-part .contenedor-dos .card .imgContainer {
+    position: relative;
+    width: 100%;
+}
+
+#second-part .contenedor-dos .card .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px;
+    transition: 0.3s ease; /* Suaviza el oscurecimiento */
+}
+
+#second-part .contenedor-dos .hover-dos:hover  {
+    filter: brightness(30%);
+    color: #ffffff !important; /* Oscurece la imagen al hacer hover */
+}
+
+#second-part .contenedor-dos .card .conte {
+    position: absolute; /* Para superponer sobre la imagen */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Centra exactamente */
+    padding: 10px 15px;
+    text-align: center; /* Texto en blanco para destacar sobre la imagen */
+    visibility: hidden; /* Oculto por defecto */
+    opacity: 0; /* Oculto por defecto */
+    pointer-events: none; /* No interactuar con el texto */
+    transition: 0.3s ease-in-out;
+}
+
+#second-part .contenedor-dos .hover-dos:hover .conte {
+    visibility: visible; /* Hace visible el texto */
+    opacity: 1; /* Hace visible el texto */
+    pointer-events: auto; /* Permitir interacción */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        margin: auto;
+    }
+
+    .contenedor .card {
+        height: auto;
+        transition: none;
+    }
+
+    .contenedor .card:hover {
+        height: auto;
+    }
+
+    .contenedor .card .card-body .conte {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0;
+        pointer-events: auto;
+        transition: none;
+    }
+}
