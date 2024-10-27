@@ -280,7 +280,6 @@ section {
     border: 2px solid white;
 }
 
-
 /* MEDIA QUERIES */
 
 /* Tablet horizontal */
@@ -367,7 +366,6 @@ section {
         font-size: 2em;
     }
 }
-
 
 /* Mobil 1 */
 @media (max-width: 480px) {
