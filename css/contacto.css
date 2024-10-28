@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  line-height: 1.6; /* Asegura buena legibilidad */
+  color: #333; /* Color de texto base */
+  background-color: #f8f9fa; /* Color de fondo neutro */
+}
+
+.container_titulo {
+  font-family: "Oswald", sans-serif; /* Usar una fuente legible */
+}
+
+.container_parrafo {
+  color: #777777;
+}
+
+/* Estilos generales del botón (válidos para todos los tamaños) */
+.boton {
+  background-color: #c7a17a; /* Color de fondo por defecto */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px; /* Tamaño de fuente por defecto */
+  border-radius: 5px;
+}
+
+header, footer {
+    background-color: black;
+}
+
+/* Mobil 2 */
+@media (max-width: 375px) {
+  .contenedor {
+    padding: 0px 20px 40px 10px;
+  }
+  .contenedor_linea {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .linea_recta {
+    background-color: aqua;
+  }
+
+  .contenedor_parrafo,
+  label {
+    color: #777777;
+    font-size: 14px;
+    margin: 0px 0px 5px;
+  }
+
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input{
+    height: 30px;
+    padding-bottom: 0px 15px;
+  }
+
+  textarea{
+    height: 100px;
+  }
+  .boton {
+    font-size: 14px; /* Cambia el tamaño del texto en pantallas más pequeñas */
+    margin-top: 20px; 
+    width: 130px;
+
+  }
+
+  .iconos{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icons{
+    font-size: 2.85em !important;
+    margin-bottom: 60px;
+    margin-left: 15px;
+  }
+}
+
+/* Mobil 1 */
+@media (max-width: 480px) {
+  .boton {
+    font-size: 15px; /* Ajuste del tamaño de fuente si es necesario */
+  }
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+  .boton {
+    font-size: 17px; /* Botón más grande en pantallas de tablet */
+    padding: 12px 24px;
+  }
+}
+
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+  .boton {
+    font-size: 18px; /* Botón más grande para pantallas más grandes */
+  }
+}
