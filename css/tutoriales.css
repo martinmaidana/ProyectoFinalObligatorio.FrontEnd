@@ -1,0 +1,251 @@
+
+/* ///// GOOGLE FONTS CLASSES /////////////// */
+
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  
+/* ///// GENERAL SETTINGS ////////////////////*/
+:root {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+
+/* ///// Sections BASE SETTINGS ////////////////////*/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  padding: 1rem 0rem;
+  font-weight: 600;
+  color: #777777;
+}
+
+.welcomeSectionContainer {
+  padding: 1rem;  
+}
+
+
+.welcomeSection-title,
+.welcomeSectionText,
+.sectionDivider {
+  margin-bottom: 1.8rem;
+}
+
+
+.sectionDivider {
+  border-bottom: 3px solid #777777;
+  opacity: 0.2;
+}
+
+.tutorials-welcome {
+  text-align: center;
+  padding: 2rem;
+}
+.welcomeSectionText {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  opacity: 1;
+  font-size: 1.4rem;
+  color: #777777;
+}
+
+
+/* ///// TUTORIALS-GALLERY SETTINGS ////////////////////*/
+.tutorials-gallery {
+  margin-top: 0;
+}
+
+.tutorials-gallery img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.tutorials-gallery-container {
+  padding-top: 3.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.tutorial {
+  overflow: hidden;
+}
+
+.overlay {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.overlay p {
+  color: aliceblue;
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay a {
+  color: #ffdfbf;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.tutorial {
+  position: relative;
+  margin: 1rem 0.5rem;
+}
+
+.tutorial img {
+  transition: transform 0.3s ease; 
+}
+
+
+
+.tutorial:hover img {
+  opacity: 0.5;
+  transform: scale(1.15); 
+  overflow: hidden;
+}
+
+ .tutorial:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+
+
+
+
+/* ///// RESPONSIVE SETTINGS ////////////////////*/
+/* References --------------------*/
+/* Tablet horizontal */
+/* @media screen and (max-width: 1080px) { } */
+/* Tablet vertical */
+/* @media (max-width: 768px) { } */
+/* Mobil 1 */
+/* @media (max-width: 480px) { } */
+/* Mobil 2 */
+/* @media (max-width: 375px) { } */
+
+
+@media screen and (max-width: 440px) {
+  .overlay p {
+    font-size: 1.75rem;
+  }
+  
+  .overlay a {
+    font-size: 1.25rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer,
+header {    
+    background-color: #384E54;
+}
