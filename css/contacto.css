@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container_titulo {
+  font-family: "Oswald", sans-serif;
+  margin-right: 10px;
+}
+
+.container_parrafo {
+  color: #777777;
+}
+ .linea_recta {
+    flex: 1 1 auto;
+    border-bottom: 1px solid gray;
+  }
+
+/* Estilos generales del botón para pantallas pequeñas */
+.boton {
+  background-color: #c7a17a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 20px;
+  width: 130px;
+}
+
+header,
+footer {
+  background-color: black;
+}
+
+.contenedor {
+  padding: 0px 20px 40px 10px;
+}
+
+.contenedor_linea {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+
+.contenedor_parrafo,
+label {
+  color: #777777;
+  font-size: 14px;
+  margin: 0px 0px 5px;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 30px;
+  padding-bottom: 0px 15px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.iconos {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  font-size: 2.85em !important;
+  margin-bottom: 60px;
+  margin-left: 15px;
+}
+
+@media (min-width: 375px) {
+  .boton {
+    font-size: 10px;
+  }
+  
+}
+
+/* Mobil 1 (max-width: 480px) */
+@media (min-width: 480px) {
+  .boton {
+    font-size: 15px;
+  }
+}
+
+/* Tablet vertical (max-width: 768px) */
+@media (min-width: 768px) {
+  .boton {
+    font-size: 17px;
+    padding: 12px 24px;
+  }
+}
+
+/* Tablet horizontal (max-width: 1080px) */
+@media (min-width: 1080px) {
+  .boton {
+    font-size: 18px;
+  }
+
+  .contenedor{
+    display: flex;
+  }
+  .contenedor_comunicate{
+    margin-right: 10px;
+    width: -webkit-fill-available;
+  
+  }
+  .contenedor_redes{
+    width: -webkit-fill-available;
+  }
+  .linea_vertical {
+    display: inline-block; 
+    width: 1px; 
+    background-color: gray; 
+    margin: 0 40px; 
+  }
+  
+}
