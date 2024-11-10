@@ -15,10 +15,10 @@ body {
 .container_parrafo {
   color: #777777;
 }
- .linea_recta {
-    flex: 1 1 auto;
-    border-bottom: 1px solid gray;
-  }
+.linea_recta {
+  flex: 1 1 auto;
+  border-bottom: 1px solid gray;
+}
 
 /* Estilos generales del botón para pantallas pequeñas */
 .boton {
@@ -32,11 +32,6 @@ body {
   width: 130px;
 }
 
-header,
-footer {
-  background-color: black;
-}
-
 .contenedor {
   padding: 0px 20px 40px 10px;
 }
@@ -46,8 +41,6 @@ footer {
   align-items: center;
   flex-direction: row;
 }
-
-
 
 .contenedor_parrafo,
 label {
@@ -85,7 +78,6 @@ textarea {
   .boton {
     font-size: 10px;
   }
-  
 }
 
 /* Mobil 1 (max-width: 480px) */
@@ -109,22 +101,20 @@ textarea {
     font-size: 18px;
   }
 
-  .contenedor{
+  .contenedor {
     display: flex;
   }
-  .contenedor_comunicate{
+  .contenedor_comunicate {
     margin-right: 10px;
     width: -webkit-fill-available;
-  
   }
-  .contenedor_redes{
+  .contenedor_redes {
     width: -webkit-fill-available;
   }
   .linea_vertical {
-    display: inline-block; 
-    width: 1px; 
-    background-color: gray; 
-    margin: 0 40px; 
+    display: inline-block;
+    width: 1px;
+    background-color: gray;
+    margin: 0 40px;
   }
-  
 }

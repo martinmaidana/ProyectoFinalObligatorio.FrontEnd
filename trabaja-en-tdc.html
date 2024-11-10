@@ -7,49 +7,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/trabajaconnosotros.css">
+    <link rel="stylesheet" href="./css/trabaja-en-tdc.css">
     <title>Trabaja con nosotros</title>
 </head>
 
 <body>
-    <header>
-        <h1>HEADER </h1>
-    </header>
+   
 
     <main>
 
-        <div>
+        <div class="contenedor">
             <div>
-                <p>SUMATE A NUESTRO EQUIPO</p>
-                <h1>TRABAJÁ EN TDC</h1>
-                <p>Si querés formar parte de Tienda de Café envianos tu datos y adjunta tu CV</p>
+                <p class="subtitulo_tdc">SUMATE A NUESTRO EQUIPO</p>
+                <h1 class="titulo_tdc">TRABAJÁ EN TDC</h1>
+                <div class="contenedor_linea_naranja">
+                    <span class="linea-naranja"></span>
+                </div>
+                <p class="parrafo_tdc">Si querés formar parte de Tienda de Café envianos tu datos y adjunta tu CV</p>
             </div>
 
             <form id="trabajaconnosotrosForm">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" required>
-
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono">
-
-                <label for="puesto">¿Cuál es tu puesto de trabajo?</label>
-                <input type="text" id="puesto" name="puesto">
-
-                <label for="archivo">Adjuntar CV</label>
-                <input type="file" id="archivo" name="archivo" accept=".pdf,.doc,.docx,.jpg,.png" required>
-
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-
-
-                <button type="submit">Enviar</button>
+                <div class="pares">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+            
+                <div class="pares">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+            
+                <div class="pares">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            
+                <div class="pares">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+            
+                <div class="pares">
+                    <label for="puesto">¿Cuál es tu puesto de trabajo?</label>
+                    <input type="text" id="puesto" name="puesto">
+                </div>
+            
+                <div class="pares">
+                    <label for="archivo">Adjuntar CV</label>
+                    <input type="file" id="archivo" name="archivo" accept=".pdf,.doc,.docx,.jpg,.png" required>
+                </div>
+            
+                <div class="pares">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+            
+                <button class="boton" type="submit">Enviar</button>
             </form>
+            
 
             <div id="trabajaconnosotros"></div>
         </div>
@@ -59,9 +74,7 @@
     </main>
 
 
-    <footer>
-        <h2>Footer </h2>
-    </footer>
+    
 </body>
 
 </html>
