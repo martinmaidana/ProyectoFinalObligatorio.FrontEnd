@@ -262,28 +262,7 @@ body {
   color: var(--color-orange);
 }
 
-@media (max-width: 768px) {
-  .nav {
-      flex-direction: column;
-  }
-  
-  .nav-list {
-      margin-top: 20px;
-  }
-  
-  .hero-title {
-      font-size: 36px;
-  }
-  
-  .hero-subtitle {
-      font-size: 18px;
-  }
-  
-  
-  .footer-grid {
-      grid-template-columns: 1fr;
-  }
-}
+
 
 
 .mate-shop-section { 

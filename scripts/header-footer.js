@@ -4,7 +4,7 @@ header.innerHTML = `
      <header class="header">
         <div class="container">
             <nav class="nav">
-                <img src="path-to-logo.png" alt="Tienda de Café Logo" class="logo">
+                <img src="img/palabra_MATE.png" alt="Tienda de MATE Logo" class="logo">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#" class="nav-link">Nuestro café</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Tutoriales</a></li>
@@ -28,7 +28,7 @@ footer.innerHTML = `
                     <div class="footer-inner">
                         <div class="footer-wrapper">
                             <div class="footer-row">
-                                <img src="img\mate-yerba.jpg" alt="Logo Footer" class="footer-logo">
+                                <img src="img/palabra_MATE.png" alt="Logo Footer" class="footer-logo">
                                 <div class="footer-columns">
                                     <div class="footer-column">
                                         <div class="footer-list">
