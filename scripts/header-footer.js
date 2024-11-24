@@ -4,15 +4,17 @@ header.innerHTML = `
      <header class="header">
         <div class="container">
             <nav class="nav">
+              <a href="index.html">
                 <img src="img/palabra_MATE.png" alt="Tienda de MATE Logo" class="logo">
+              </a>  
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#" class="nav-link">Nuestro café</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Tutoriales</a></li>
+                    <li class="nav-item"><a href="tienda.html" class="nav-link">Nuestro MATE</a></li>
+                    <li class="nav-item"><a href="tutoriales.html" class="nav-link">Tutoriales</a></li>
                    
-                    <li class="nav-item"><a href="#" class="nav-link">Nuestro menú</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Trabajá con nosotros</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Franquicias</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="menu-tienda.html" class="nav-link">Nuestro menú</a></li>
+                    <li class="nav-item"><a href="trabaja-en-tdc.html" class="nav-link">Trabajá con nosotros</a></li>
+                    <li class="nav-item"><a href="franquicias.html" class="nav-link">Franquicias</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,6 +31,7 @@ footer.innerHTML = `
                         <div class="footer-wrapper">
                             <div class="footer-row">
                                 <img src="img/palabra_MATE.png" alt="Logo Footer" class="footer-logo">
+                                
                                 <div class="footer-columns">
                                     <div class="footer-column">
                                         <div class="footer-list">
@@ -41,6 +44,7 @@ footer.innerHTML = `
                                             </ul>
                                         </div>
                                     </div>
+                                   
                                     <div class="footer-column">
                                         <div class="footer-list">
                                             <h5 class="footer-list-title">Necesitás Ayuda</h5>
@@ -52,6 +56,7 @@ footer.innerHTML = `
                                             </ul>
                                         </div>
                                     </div>
+                                   
                                     <div class="newsletter-column">
                                         <div class="newsletter-wrapper">
                                             <h5 class="newsletter-title">SUSCRIBITE A NUESTRO NEWSLETTER</h5>
@@ -61,11 +66,8 @@ footer.innerHTML = `
                                             </form>
                                             <h5 class="social-title">CONECTATE CON NOSOTROS</h5>
                                             <div class="social-icons">
-                                                <a href="#" class="social-icon">
-                                                    <img src="img/mate-yerba.jpg" alt="Facebook" class="social-icon-image">
-                                                </a>
-                                                <a href="#" class="social-icon">
-                                                    <img src="img/mate-yerba.jpg" alt="Instagram" class="social-icon-image">
+                                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                                                 </a>
                                             </div>
                                         </div>
@@ -78,6 +80,7 @@ footer.innerHTML = `
             </div>
         </footer>
     </div>
+
 `;
 
 window.onload = function() {
@@ -90,7 +93,13 @@ window.onload = function() {
     // Crea un nuevo elemento de enlace para el CSS
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = 'css/styles.css';
+    link.href = 'css/style.css';
+
+    // Agrega el script de Font Awesome al encabezado
+    const fontAwesomeScript = document.createElement('script');
+    fontAwesomeScript.src = 'https://kit.fontawesome.com/668f014530.js';
+    fontAwesomeScript.crossorigin = 'anonymous';
+    header.appendChild(fontAwesomeScript);
 
     // Agrega el enlace al documento
     body.appendChild(link);
