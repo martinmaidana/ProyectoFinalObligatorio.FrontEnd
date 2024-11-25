@@ -49,10 +49,10 @@ footer.innerHTML = `
                                         <div class="footer-list">
                                             <h5 class="footer-list-title">Necesitás Ayuda</h5>
                                             <ul class="footer-list-items">
-                                                <li class="footer-list-item"><a href="#">Tutoriales</a></li>
-                                                <li class="footer-list-item"><a href="#">Trabajá en TDM</a></li>
-                                                <li class="footer-list-item"><a href="#">Franquicias</a></li>
-                                                <li class="footer-list-item"><a href="#">Contacto</a></li>
+                                                <li class="footer-list-item"><a href="menu-tienda.html">Tutoriales</a></li>
+                                                <li class="footer-list-item"><a href="trabaja-en-tdc.html">Trabajá en TDM</a></li>
+                                                <li class="footer-list-item"><a href="franquicias.html">Franquicias</a></li>
+                                                <li class="footer-list-item"><a href="contacto.html">Contacto</a></li>
                                             </ul>
                                         </div>
                                     </div>
