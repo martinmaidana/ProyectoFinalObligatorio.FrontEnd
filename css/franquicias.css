@@ -1,9 +1,123 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Oswald", sans-serif;/* Usar una fuente legible */
-    line-height: 1.6; /* Asegura buena legibilidad */
-    color: #333; /* Color de texto base */
-    background-color: #f8f9fa; /* Color de fondo neutro */
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.contenedor {
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+.subtitulo_franquicias {
+  font-size: 16px;
+  line-height: 20px;
+  color: #c7a17a;
+  text-align: center;
+}
+
+.titulo_franquicias {
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  margin-right: 10px;
+}
+
+/* Estilo para la línea */
+
+.contenedor_linea_naranja{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.linea-naranja {
+  display: flex;           /* Usamos flex para centrar el span */
+  justify-content: center; 
+  height: 2px;
+  background-color: #c7a17a;
+  margin: 0px 560px 0px 560px;
+
+}
+
+.parrafo_franquicias {
+  color: #777777;
+  font-size: 14px;
+  margin: 0px 0px 5px;
+  line-height: 24px;
+  font-size: 14px;
+  text-align: center;
+}
+
+label {
+  color: #272727;
+  font-size: 14px;
+  margin: 0px 0px 5px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+input {
+  height: 30px;
+}
+
+#franquiciasForm {
+  display: grid;
+  gap: 30px;
+}
+
+.pares {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px 0px 18px 10px;
+}
+
+.boton {
+  background-color: #c7a17a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 20px;
+  width: 130px;
+}
+
+@media (min-width: 375px) {
+  .linea-naranja {
+   
+    margin: 0px 20px 0px 20px;
   
+  }
+}
+
+/* Mobil 1 (max-width: 480px) */
+@media (min-width: 480px) {
+  .linea-naranja {
+   
+    margin: 0px 160px 0px 160px;
+  
+  }
+  #franquiciasForm {
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
+}
+
+/* Tablet vertical (max-width: 768px) */
+@media (min-width: 768px) {
+  .linea-naranja {
+   
+    margin: 0px 300px 0px 300px;
+  
+  }
+}
+
+/* Tablet horizontal (max-width: 1080px) */
+@media (min-width: 1080px) {
+  #franquiciasForm {
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  }
+}

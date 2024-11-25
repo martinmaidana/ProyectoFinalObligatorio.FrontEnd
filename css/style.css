@@ -7,23 +7,36 @@
   --font-primary: 'Oswald', sans-serif;
   --font-secondary: 'Lato', sans-serif;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html,
 body {
-  font-family: var(--font-secondary);
-  line-height: 1.6;
-  color: var(--color-gray-dark);}
+  
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  /* background: linear-gradient(180deg, #111111 0%, #333333 100%); */
+  background-attachment: fixed;
+}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;}
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .logo {
   width: 100px;}
 
@@ -220,6 +233,7 @@ body {
   align-items: center;
   background-color: #000000;
   padding: 80px; }
+  
 .header-container { 
   display: flex; 
   height: 60px; 
