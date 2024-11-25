@@ -1,0 +1,404 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-weight: 400;
+    background: black;
+    color: #e6e6e6;
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 1rem;
+}
+
+/* PORTADA */
+#portada {
+    display: flex;
+    align-items: center;
+    background-image: url("/imagenes/5.webp");
+    color: #ffffff;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#portada_texto {
+    line-height: 1.2;
+    margin-left: 3em;
+    width: 300px;
+}
+
+#portada_titulo1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+#portada_titulo2 {
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#portada_p {
+    font-size: 1.19em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* SECCIÓN PRODUCTOS */
+#menu-productos-1,
+#menu-productos-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    flex-wrap: wrap;
+
+}
+
+#menu-productos-2 {
+    margin-top: 3em;
+}
+
+.container_tres_productos {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.container_dos_productos {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.productos {
+    margin-bottom: 1em;
+    display: flex;
+    max-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 3 productos columna */
+.producto1 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.producto1:hover {
+    flex-grow: 1;
+}
+
+.producto2 {
+    flex-grow: 1;
+}
+
+.producto3 {
+    flex-grow: 2;
+}
+
+/* 2 productos columna */
+.producto4 {
+    flex-grow: 1;
+}
+
+.producto5 {
+    flex-grow: 2;
+}
+
+.producto_texto {
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    background: transparent;
+}
+
+.producto_texto1 {
+    position: absolute;
+    z-index: 1;
+    font-size: 1.1em;
+    background-color: #F4F4F4;
+    color: black;
+    margin-left: 1em;
+    padding: 0.1em;
+    left: 0;
+    right: 0;
+    bottom: 70%;
+    width: fit-content;
+    height: auto;
+}
+
+.producto_texto2 {
+    position: absolute;
+    z-index: 1;
+    font-size: 1.5em;
+    padding: 1em;
+    font-weight: 800;
+    color: white;
+    left: 0;
+    right: 0;
+    bottom: 45%;
+
+}
+
+.productos img {
+    height: 100%;
+    width: 100%;
+}
+
+.productos img:hover {
+    transition: transform 0.7s ease;
+    transform: scale(1.1);
+}
+
+/* 
+.tresProdImg {
+    background-color: rgb(61, 90, 153);
+}
+
+.dosProdImg {
+    background-color: rgb(230, 157, 102);
+} */
+
+/* SECCIÓN CARTA */
+#menu-carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(48, 48, 48, 0.736);
+    padding: 1em;
+    margin: 1em;
+}
+
+#menu-carta h2 {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+#carta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#carta img {
+    height: auto;
+    width: 100%;
+}
+
+#carta-1,
+#carta-2,
+#carta-3 {
+    background-color: beige;
+    margin: 0.1em;
+    height: auto;
+    min-width: 300px;
+    flex: 1 1 300px;
+    box-sizing: border-box;
+    max-width: 350px;
+}
+
+/* SECCIÓN LOCALES */
+#redir-locales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/imagenes/redir_locales.webp");
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    height: 100vh;
+}
+
+#redir-locales-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#redir-locales h1 {
+    text-transform: uppercase;
+    font-size: 4.1em;
+    color: #c7a17a;
+}
+
+#redir-locales h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 3.1em;
+}
+
+#redir-locales p {
+    font-size: 1.3em;
+}
+
+#btnIrALocales {
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 1.2em;
+    font-size: 1em;
+    background: transparent;
+    color: white;
+    border: 2px solid grey;
+    margin-top: 2em;
+}
+
+#btnIrALocales:hover {
+    border: 2px solid white;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet horizontal */
+@media (max-width: 1080px) {}
+
+@media (max-width: 936px) {
+    .producto_texto1 {
+        font-size: 1.1em;
+    }
+
+    .producto_texto2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+
+    .producto_texto1 {
+        font-size: 1.6em;
+    }
+
+    .producto_texto2 {
+        bottom: 45%;
+        font-size: 2.8em;
+    }
+
+    #menu-productos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productos {
+        width: 100%;
+        max-height: 100%;
+        flex-grow: 1;
+        margin: 10px;
+    }
+
+    #menu-productos-1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #menu-productos-2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .container_tres_productos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container_dos_productos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #redir-locales h1 {
+        font-size: 2.6em;
+    }
+
+    #redir-locales h2 {
+        font-size: 2em;
+    }
+
+    #redir-locales p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 693px) {
+    .producto_texto1 {
+        font-size: 1.6em;
+    }
+
+    .producto_texto2 {
+        bottom: 37%;
+        font-size: 2em;
+    }
+}
+
+/* Mobil 1 */
+@media (max-width: 480px) {
+    .producto_texto1 {
+        font-size: 1.3em;
+    }
+
+    .producto_texto2 {
+        bottom: 34%;
+        font-size: 1.8em;
+    }
+}
+
+/* Mobil 2 */
+@media (max-width: 375px) {
+    #redir-locales h2 {
+        font-size: 1.6em;
+    }
+
+    #redir-locales h1 {
+        font-size: 2em;
+    }
+
+    #redir-locales p {
+        font-size: 1em;
+    }
+
+    .producto_texto1 {
+        font-size: 1.3em;
+    }
+
+    .producto_texto2 {
+        bottom: 23%;
+        font-size: 1.6em;
+    }
+}
